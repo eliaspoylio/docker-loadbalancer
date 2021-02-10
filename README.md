@@ -2,6 +2,21 @@
 
 Layer 7 load balancer using Nginx as reverse proxy.
 
+```
+           ----------
+           | client |
+           ----------
+               |
+       ----------------
+       | loadbalancer |
+       ----------------
+   ---------|  |  |-------       
+   |           |         |
+--------   --------   --------
+| app1 |   | app1 |   | app1 |   
+--------   --------   --------
+```
+
 ## Dependencies
 
 - NodeJS
